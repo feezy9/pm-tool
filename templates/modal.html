@@ -1,0 +1,37 @@
+<div class="modal">
+  <ion-header-bar title="My Modal Title" class="bar bar-positive">
+
+	<h1 class="title">Title!</h1>
+	<div class="buttons">
+	  <button class="button button-clear button-positive" ng-click="closeModal()"><span style="color:#fff;">Cancel</span></button>
+	</div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+    <form class="list" ng-submit="submit()">
+    <label class="item item-input">
+      <input type="text" placeholder="Task Name" name="title" ng-model="item.title" value="">
+    </label>
+    <label class="item item-input">
+      <textarea placeholder="Description" name="description"ng-model="task.description"></textarea>
+    </label>
+     <label class="item item-input">
+    <select name="epics" id="epics" ng-model="task.epicId">
+      <option ng-repeat="epic in epics" value="{{epic.id}}">{{epic.title}}</option>
+        
+
+    </select>
+    </label>
+
+    <div class="range">
+      <i class="icon ion-volume-low"></i>
+      <input type="range" name="volume">
+      <i class="icon ion-volume-high"></i>
+    </div>
+    <input type="submit" value="Submit" class="button button-full button-positive" style="width: 100%">
+      </form>
+    </div>
+  </div>
+  </ion-content>
+</div>
+

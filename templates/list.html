@@ -1,0 +1,27 @@
+<ion-view title="List">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content has-header="true">
+    <ion-list show-delete="data.showDelete"
+              on-delete="onItemDelete(item)"
+              >
+
+      <ion-item ng-repeat="item in tasks" 
+                item="item"
+                href="#/item/{{item.id}}"
+                >
+          {{ item.title }} Epic {{item.epicId}}
+
+          <ion-option-button ng-class="{'button-assertive': item.active === false, 'button-balanced': item.active === true}" ng-click="tclick(item)">{{item.active}}</ion-option-button> 
+
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+  <ion-nav-buttons side="right">
+  <button class="button button-clear" ng-click="openModal()">
+      New
+  </button>
+  </ion-nav-buttons>
+</ion-view>
