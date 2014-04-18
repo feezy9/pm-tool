@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/norman784/pen/Ahwdg.
-
+Project management tool built with AngularJS, Firebase, and Ionic Framework 
  
