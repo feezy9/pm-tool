@@ -5,10 +5,10 @@
   <ion-content has-header="true">
     <ion-list>
 
-      <ion-item ng-repeat="item in items" 
+      <ion-item ng-repeat="todo in todos" 
                 item="item"
-                href="#/app/home/{{item.id}}">
-        {{ item.title }}
+                href="#/app/home/{{todo.id}}">
+        {{ todo.title }}
       </ion-item>
   </ion-content>
   <ion-nav-buttons side="right">
