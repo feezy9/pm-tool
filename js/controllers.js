@@ -52,40 +52,15 @@ angular.module('pmtool.controllers', [])
 
       }
 
-
+      $scope.todos.push(newItem);
       //$scope.todos.$add(newItem);
-
-      $scope.todos.$child(numTodos.length).$set(newItem);
       $scope.todo = {};
       $scope.closeModal();
       $scope.modal.remove();
 
     };
 
-
-    ItemsService.$bind($scope, 'todos');
-
-    //ItemsService.all().$bind($scope, 'todos');
-    // $scope.todos = ItemsService.all();
-    // $scope.todos.$bind($scope, 'todos');
-    console.log($scope.todos)
-
-  //$scope.items = ItemsService.all();
-
-
-  
-
-})
-.controller('ActiveListCtrl', function($scope, $ionicModal, ItemsService, $stateParams){
-
-	ItemsService.$bind($scope, 'items');
-	$scope.items.$on("loaded", function() {
-	  console.log("Initial data received!");
-	});
-
-    //$scope.tasks = ItemsService.getItemTasks($stateParams.id);
-    $scope.tasks = ItemsService.getActiveTasks();
-    console.log($scope.tasks);
+    
     $scope.data = {
       showDelete: false
     };
@@ -102,6 +77,29 @@ angular.module('pmtool.controllers', [])
     $scope.onItemDelete = function(item) {
       $scope.items.splice($scope.items.indexOf(item), 1);
     };
+
+  	$scope.items = ItemsService.all();
+ 
+})
+.controller('ActiveListCtrl', function($scope, $ionicModal, $firebase, ItemsService){
+    $scope.data = {
+      showDelete: false
+    };
+
+
+    $scope.tclick = function(item) {
+      console.log(item);
+      item.active = item.active === false ? true: false;
+      //$scope.acitveClass = $scope.acitveClass === 'button-assertive' ? 'button-balanced': 'button-assertive';
+    }
+
+
+    
+    $scope.onItemDelete = function(item) {
+      $scope.items.splice($scope.items.indexOf(item), 1);
+    };
+
+    $scope.tasks = ItemsService.getActiveTasks();
 
 
 })
