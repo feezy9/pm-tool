@@ -8,7 +8,7 @@
   </ion-header-bar>
   <ion-content>
     <div class="list">
-    <form class="list" ng-submit="submit(task)">
+    <form class="list" ng-submit="submit()">
     <label class="item item-input">
       <input type="text" placeholder="Task Name" name="title" ng-model="task.title" value="">
     </label>
@@ -16,12 +16,11 @@
       <textarea placeholder="Description" name="description"ng-model="task.description"></textarea>
     </label>
      <label class="item item-input">
-     <input type="text" placeholder="Task Name" name="title" ng-model="task.epidId" value="{{task.epicId}}">
-<!--     <select name="epics" id="epics" ng-model="task.epicId">
+    <select name="epics" id="epics" ng-model="task.epicId">
       <option ng-repeat="epic in epics" value="{{epic.id}}">{{epic.title}}</option>
         
 
-    </select> -->
+    </select>
     </label>
 
     <div class="range">

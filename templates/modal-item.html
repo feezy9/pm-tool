@@ -1,0 +1,22 @@
+<div class="modal">
+  <ion-header-bar title="My Modal Title" class="bar bar-positive">
+
+	<h1 class="title">Title!</h1>
+	<div class="buttons">
+	  <button class="button button-clear button-positive" ng-click="closeModal()"><span style="color:#fff;">Cancel</span></button>
+	</div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+    <form class="list" ng-submit="submit(item)">
+    <label class="item item-input">
+      <input type="text" placeholder="Todo Name" name="title" ng-model="item.title" value="{{item.title}}">
+    </label>
+   
+    <input type="submit" value="Submit" class="button button-full button-positive" style="width: 100%">
+      </form>
+    </div>
+  </div>
+  </ion-content>
+</div>
+

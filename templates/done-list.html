@@ -1,21 +1,31 @@
-<ion-view title="Active List">
+<ion-view title = "Done List">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content has-header="true">
+    <div class="card">
+      <div 
+      data-ac-chart="'line'" 
+      data-ac-data="data" 
+      data-ac-config="config" 
+      class="chart" style="height:100px; padding: 15px 40px 15px 15px;">
+      </div>
+    </div>
+ 
+    <br>
     <ion-list show-delete="data.showDelete"
               on-delete="onItemDelete(item)"
               >
 
-      <ion-item ng-repeat="item in activeTasks" 
+      <ion-item ng-repeat="item in tasks" 
                 item="item"
                 href="#/item/{{item.id}}"
                 >
           {{ item.title }} <br />
           <a href="#/app/home/{{item.epicId}}">Epic {{item.epicId}}</a> <br />
-          Created: {{item.createdAt | relativeDate}}
+          Completed: {{item.completedAt | relativeDate}}
           <ion-option-button ng-class="{'button-assertive': item.active === false, 'button-balanced': item.active === true}" ng-click="tclick(item)">Active <br/>{{item.active}}</ion-option-button> 
-          <ion-option-button ng-class="{'button-assertive': item.done === false, 'button-balanced': item.done === true}" ng-click="doneClick(item)">Done <br/>{{item.done}}</ion-option-button> 
+          <ion-option-button ng-class="{'button-assertive': item.dpme === false, 'button-balanced': item.done === true}" ng-click="doneClick(item)">Done <br/>{{item.done}}</ion-option-button> 
 
       </ion-item>
 

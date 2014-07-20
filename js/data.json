@@ -1,40 +1,223 @@
-[{ "id": 0, "title": "this item 1", "done": false, 
-    "tasks": [
-      { "id": 1, "title": "this task 1a", "done": false, "active": false, "epicId": 0 },
-      { "id": 2, "title": "this task 2", "done": false, "active": true, "epicId": 0 },
-      { "id": 3, "title": "this task 3", "done": false, "active": false, "epicId": 0 },
-      { "id": 4, "title": "this task 4", "done": false, "active": false, "epicId": 0 },
-      { "id": 5, "title": "this task 5", "done": false, "active": true, "epicId": 0 }
-  ]},
-    { "id": 1, "title": "this item 2", "done": false, 
-    "tasks": [
-      { "id": 1, "title": "this task 1", "done": false, "active": true, "epicId": 1 },
-      { "id": 2, "title": "this task 2", "done": false, "active": false, "epicId": 1 },
-      { "id": 3, "title": "this task 3", "done": false, "active": false, "epicId": 1 },
-      { "id": 4, "title": "this task 4", "done": false, "active": false, "epicId": 1 },
-      { "id": 5, "title": "this task 5", "done": false, "active": true, "epicId": 1 }
-  ]},
-    { "id": 2, "title": "this item 3", "done": false, 
-    "tasks": [
-      { "id": 1, "title": "this task 1", "done": false, "active": false, "epicId": 2 },
-      { "id": 2, "title": "this task 2", "done": false, "active": true, "epicId": 2 },
-      { "id": 3, "title": "this task 3", "done": false, "active": true, "epicId": 2 },
-      { "id": 4, "title": "this task 4", "done": false, "active": false, "epicId": 2},
-      { "id": 5, "title": "this task 5", "done": false, "active": false, "epicId": 2 }
-  ]},
-    { "id": 3, "title": "this item 4", "done": false, 
-    "tasks": [
-      { "id": 1, "title": "this task 1", "done": false, "active": false, "epicId": 3 },
-      { "id": 2, "title": "this task 2", "done": false, "active": false, "epicId": 3 },
-      { "id": 3, "title": "this task 3", "done": false, "active": false, "epicId": 3 },
-      { "id": 4, "title": "this task 4", "done": false, "active": true, "epicId": 3 },
-      { "id": 5, "title": "this task 5", "done": false, "active": true, "epicId": 3 }
-  ]},
-    { "id": 4, "title": "this item 5", "done": false, 
-    "tasks": [
-      { "id": 1, "title": "this task 1", "done": false, "active": true, "epicId": 4 },
-      { "id": 2, "title": "this task 2", "done": false, "active": true, "epicId": 4 },
-      { "id": 3, "title": "this task 3", "done": false, "active": false, "epicId": 4 },
-      { "id": 4, "title": "this task 4", "done": false, "active": false, "epicId": 4 },
-      { "id": 5, "title": "this task 5", "done": false, "active": false, "epicId": 4 }
-  ]}]
+{
+  "2" : {
+    "done" : false,
+    "title" : "this item 3",
+    "tasks" : [ {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 1",
+      "id" : 1,
+      "epicId" : 2
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 2",
+      "id" : 2,
+      "epicId" : 2
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 3",
+      "id" : 3,
+      "epicId" : 2
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 4",
+      "id" : 4,
+      "epicId" : 2
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 5",
+      "id" : 5,
+      "epicId" : 2
+    } ],
+    "show" : true,
+    "id" : 2
+  },
+  "1" : {
+    "done" : false,
+    "title" : "this item 2",
+    "tasks" : [ {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 1",
+      "id" : 1,
+      "epicId" : 1
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 2",
+      "id" : 2,
+      "epicId" : 1
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 3",
+      "id" : 3,
+      "epicId" : 1
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 4",
+      "id" : 4,
+      "epicId" : 1
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 5",
+      "id" : 5,
+      "epicId" : 1
+    } ],
+    "show" : true,
+    "id" : 1
+  },
+  "4" : {
+    "done" : false,
+    "title" : "this item 5",
+    "tasks" : [ {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 1",
+      "id" : 1,
+      "epicId" : 4
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 2",
+      "id" : 2,
+      "epicId" : 4
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 3",
+      "id" : 3,
+      "epicId" : 4
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 4",
+      "id" : 4,
+      "epicId" : 4
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 5",
+      "id" : 5,
+      "epicId" : 4
+    } ],
+    "show" : true,
+    "id" : 4
+  },
+  "0" : {
+    "done" : false,
+    "title" : "this item 1",
+    "tasks" : [ {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 1a",
+      "id" : 1,
+      "epicId" : 0
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 2",
+      "id" : 2,
+      "epicId" : 0
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 3",
+      "id" : 3,
+      "epicId" : 0
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 4",
+      "id" : 4,
+      "epicId" : 0
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 5",
+      "id" : 5,
+      "epicId" : 0
+    } ],
+    "show" : true,
+    "id" : 0
+  },
+  "-JLxfJoZeWm76QSQyi9p" : {
+    "done" : false,
+    "active" : true,
+    "title" : "this task 6",
+    "tasks" : [ {
+      "active" : false,
+      "title" : "the first task",
+      "id" : 0,
+      "epicId" : 5
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this other task",
+      "id" : 1,
+      "epicId" : "epicId"
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "so many tasks",
+      "id" : 2,
+      "epicId" : 5
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "and another one",
+      "id" : 3,
+      "epicId" : 5
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "the last task",
+      "id" : 4
+    } ],
+    "show" : true,
+    "id" : 5
+  },
+  "3" : {
+    "done" : false,
+    "title" : "this item 4",
+    "tasks" : [ {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 1",
+      "id" : 1,
+      "epicId" : 3
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 2",
+      "id" : 2,
+      "epicId" : 3
+    }, {
+      "done" : false,
+      "active" : false,
+      "title" : "this task 3",
+      "id" : 3,
+      "epicId" : 3
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 4",
+      "id" : 4,
+      "epicId" : 3
+    }, {
+      "done" : false,
+      "active" : true,
+      "title" : "this task 5",
+      "id" : 5,
+      "epicId" : 3
+    } ],
+    "show" : true,
+    "id" : 3
+  }
+}

@@ -1,4 +1,4 @@
-angular.module('ionicApp', ['ionic', 'pmtool.controllers', 'pmtool.services'])
+angular.module('ionicApp', ['ionic', 'pmtool.controllers', 'pmtool.services','relativeDate', 'angularCharts'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -32,6 +32,15 @@ angular.module('ionicApp', ['ionic', 'pmtool.controllers', 'pmtool.services'])
       'menuContent' : {
         templateUrl: 'templates/list.html',
         controller: 'ListCtrl'
+      }
+    }
+  })
+  .state('app.done', {
+    url: '/done',
+    views: {
+      'menuContent' : {
+        templateUrl: 'templates/done-list.html',
+        controller: 'DoneListCtrl'
       }
     }
   })

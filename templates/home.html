@@ -3,12 +3,18 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content has-header="true">
-    <ion-list>
+    <ion-list show-delete="data.showDelete"
+              on-delete="onItemDelete(item)"
+              >
 
       <ion-item ng-repeat="todo in items" 
                 item="item"
                 href="#/app/home/{{todo.id}}">
-        {{ todo.title }}
+        {{ todo.title }} <br> 
+        Tasks {{todo.tasks.length}} <br />
+        Created: {{todo.createdAt | relativeDate}} 
+        <ion-option-button class="button-assertive" ng-click="editItem(todo)">Edit</ion-option-button> 
+
       </ion-item>
   </ion-content>
   <ion-nav-buttons side="right">
