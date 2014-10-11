@@ -7,7 +7,7 @@ angular.module('pmtool.services', ['firebase'])
 
 .factory('ItemsService', function($firebase){
 
-  var items = [
+  var local_items = [
     { id  : 0, title: "The Item 1", done: false, createdAt: 1402333253323,
     tasks : [
     { id  : 1, title: "this task 1a", done: false, active: false, epicId: 0, desc: "some text for this task", createdAt: 1402333253323, completedAt: 1402333253323 },
@@ -50,7 +50,7 @@ angular.module('pmtool.services', ['firebase'])
   ]}
   ];
 
-  var remote_items = $firebase( new Firebase("https://pm-tool.firebaseio.com/todos") );
+  var items = $firebase( new Firebase("https://pm-tool.firebaseio.com/todos") );
 
 
 
